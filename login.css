@@ -1,0 +1,191 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px;
+    background-color: #c7d7ea;
+}
+
+.logo {
+    width: 40px;
+    right: 50px;
+    
+}
+
+.nav a {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: #040404;
+    font-weight: 600;
+}
+
+.nav a.login-link {
+    font-weight:600;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-size: 37px;
+    color: #231f1f;
+}
+
+/* Login Form */
+.login-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Buttons */
+.login-button {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.login-button:hover {
+    background-color: #1a34a0;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #1e40af;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Sign Up */
+.signup-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-text a {
+    color: #1e40af;
+    font-weight: bold;
+}
+
+/* Social Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.google-login, .facebook-login {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.google-login {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.facebook-login {
+    background-color: #1877f2;
+    color: white;
+}
+/* إعداد الروابط العامة */
+.nav a {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+/* عند الاقتراب بالماوس Hover */
+.nav a:hover {
+    animation: bounce 0.6s ease;
+    color: #1e40af; /* لون أزرق غامق */
+}
+
+/* عند النقر */
+.nav a.clicked {
+    animation: shake 0.5s ease;
+    color: #0077ff; /* لون أزرق فاقع */
+}
+
+/* حركة ارتداد Bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* حركة اهتزاز Shake */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+
+
