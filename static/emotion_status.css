@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:rgb(222, 215, 230);
+    margin: 0;
+    padding: 0;
+    color:rgb(52, 22, 66);
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #cfbbdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.Smart-Alert-Icon {
+    width: 35px;
+    margin-right: 10px;
+}
+.page-title {
+  text-align: center;           /* توسيط النص أفقي */
+  font-size: 2.5rem;            /* حجم الخط */
+  font-weight: bold;            /* خط عريض */
+  margin: 20px 0;               /* مسافة فوق وتحت */
+  color: rgb(52, 22, 66);              /* لون جميل (كحلي غامق) */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط مودرن */
+  letter-spacing: 1.2px;        /* تباعد بين الحروف */
+  text-transform: uppercase;    /* يحول الحروف لأحرف كبيرة */
+  text-shadow: 1px 1px 2px #bdc3c7; /* ظل بسيط للنص */
+  position: absolute;
+  left: 35%;
+  top: 10%;
+
+}
+.go-back {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color:rgb(52, 22, 66);
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#emotionChart{
+    margin-top: 170px;
+}
+#clock {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#alertBox {
+    /*display: none;*/
+    background-color: #e84118;
+    color: white;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+}
+.hidden_{
+    display: none;
+}
+.alert-box {
+  background-color: #ffe0e0;
+  color: #a94442;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #a94442;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+main {
+    margin-top: 20px;
+}
+.hidden{
+    display: none;
+}

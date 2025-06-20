@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+<aside class="sidebar">
+<h1> <img src="{{ url_for('static', filename='images/Alarm.png') }}" alt="Alarm Icon" class="Smart-Alert-Icon"><span class="title-text">SMART ALERT</span></h1>
+<ul><li>
+  <a id="alertsLink" href="{{ url_for('alerts') }}">
+    <img src="{{ url_for('static', filename='images/Alerts.png') }}" alt="Alerts Icon" class="Icon">
+    Alerts
+  </a>
+</li>
+  
+  
+   <li><a href="{{url_for('emotion_status')}}"><img src="{{ url_for('static',filename='Emotion Status.jpg')}}" class="Icon">Emotion Status</a></li>
+  <li><a href="{{ url_for('welcome') }}"><i class="fas fa-arrow-left"></i> Go Back </a></li>
+  
+</ul>
+</aside>
+ </div>
+<div class="upload-section">
+    <h1 class="animated-title">Upload image for Emotion Analysis</h1>
+
+    <label for="imageUpload" class="custom-upload-button">Choose Image</label>
+    <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)" />
+    <span id="fileName">No image selected</span>
+
+    <div class="image-preview">
+      <img id="preview" src="#" alt="Preview" style="display: none;" />
+    </div>
+
+    <div id="imageTime"></div>
+    <div id="emotionResult">Detected Emotion: <strong>Neutral</strong></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+  </body>
+</html>

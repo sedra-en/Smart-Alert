@@ -1,0 +1,32 @@
+<!-- File: templates/submit.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Experience</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='submit.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo-section">
+      <img src="{{ url_for('static', filename='images/Alarm.png') }}" alt="Alarm Icon" class="Smart-Alert-Icon">
+      <h1>Smart Alert</h1>
+    </div>
+    <a href="{{ url_for('login') }}" class="login-link"><i class="fas fa-sign-in-alt"></i> Log In</a>
+  </header>  <div class="center-message">WE CARE ABOUT YOUR EXPERIENCE</div>  <main class="main-content">
+    <div class="left-panel">
+      <div class="chart-container">
+        <canvas id="emotionChart" width="600" height="500"></canvas>
+        <div class="happiness-text"><span id="happyPercent">80%</span> of customers left happy today!</div>
+      </div>
+    </div>
+    
+    <div class="right-panel">
+      <label for="feedback">How was your experience today?</label>
+      <textarea id="feedback" placeholder="Leave your feedback..."></textarea>
+      <button class="sub-btn">Submit</button>
+    </div>
+  </main>
+   <script src="{{ url_for('static', filename='submit.js') }}"></script></body>
+</html>
