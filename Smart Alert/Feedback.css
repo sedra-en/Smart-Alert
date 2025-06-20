@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:rgb(222, 215, 230);
+    margin: 0;
+    padding: 0;
+    color:rgb(52, 22, 66);
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #cfbbdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.Smart-Alert-Icon {
+    width: 35px;
+    margin-right: 10px;
+}
+.page-title {
+  text-align: center;           /* توسيط النص أفقي */
+  font-size: 2.5rem;            /* حجم الخط */
+  font-weight: bold;            /* خط عريض */
+  margin: 20px 0;               /* مسافة فوق وتحت */
+  color: rgb(52, 22, 66);              /* لون جميل (كحلي غامق) */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط مودرن */
+  letter-spacing: 1.2px;        /* تباعد بين الحروف */
+  text-transform: uppercase;    /* يحول الحروف لأحرف كبيرة */
+  text-shadow: 1px 1px 2px #bdc3c7; /* ظل بسيط للنص */
+  position: absolute;
+  left: 35%;
+  top: 10%;
+
+}
+.go-back {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color:rgb(52, 22, 66);
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.chart-section {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 150px;
+}
+
+.feedback-section {
+    flex:1;
+    min-width: 1000px;
+    overflow-y: auto;
+    max-height: 500px;
+    margin-top: 200px;
+}
+
+.feedback-box {
+    background-color: rgb(223, 212, 236);
+    border-left: 5px solid #433251;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left: 40px;
+ 
+}
+
+.sentiment {
+    font-weight: bold;
+    color: #444;
+}
