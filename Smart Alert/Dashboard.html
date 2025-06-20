@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css" >
+</head>
+<body>
+  <div class="container">
+<aside class="sidebar">
+<h1> <img src="images/Alarm.png" alt="Alarm Icon" class="Smart-Alert-Icon"><span class="title-text">SMART ALERT</span></h1>
+<ul>
+  <li><a href="Alerts.html"><img src="images/Alerts.png" alt="Alerts Icon " class="Icon">Alerts</a></li>
+  <li><a href="#"><img src="images/Monitoring.png" alt="Monitoring Icon"class="Icon" >Monitoring</a></li>
+  <li><a href="Welcome.html"><img src="images/Go back.png" alt="Go Back Icon" class="Icon">Go back</a></li>
+
+</ul>
+</aside>
+ </div>
+<div class="upload-section">
+    <h1 class="animated-title">Upload image for Emotion Analysis</h1>
+
+    <label for="imageUpload" class="custom-upload-button">Choose Image</label>
+    <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)" />
+    <span id="fileName">No image selected</span>
+
+    <div class="image-preview">
+      <img id="preview" src="#" alt="Preview" style="display: none;" />
+    </div>
+
+    <div id="imageTime"></div>
+    <div id="emotionResult">Detected Emotion: <strong>Neutral</strong></div>
+  </div>
+   <script src="Dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+  background-color: #f3e5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.upload-section {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.animated-title {
+  font-size: 26px;
+  color: #4a148c;
+  margin-bottom: 30px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-upload-button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-upload-button:hover {
+  background-color: #8e24aa;
+}
+
+#fileName {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.image-preview img {
+  margin-top: 25px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#emotionResult {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #4a148c;
+  font-weight: bold;
+}
+
+#imageTime {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Experience</title>
+  <link rel="stylesheet" href="Submit.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ <header class="topbar">
+  <div class="logo-section">
+    <img src="images/Alarm.png" alt="Alarm Icon" class="Smart-Alert-Icon">
+    <h1>Smart Alert</h1>
+  </div>
+  <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Log In</a>
+</header>
+
+  <div class="center-message">WE CARE ABOUT YOUR EXPERIENCE</div>
+
+  <main class="main-content">
+    <div class="left-panel">
+      <div class="chart-container">
+        <canvas id="emotionChart" width="600" height="500"></canvas>
+        <div class="happiness-text"><span id="happyPercent">80%</span> of customers left happy today!</div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <label for="feedback">How was your experience today?</label>
+      <textarea id="feedback" placeholder="Leave your feedback..."></textarea>
+      <button class="sub-btn">Submit</button>
+    </div>
+    
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="Submit.js"></script>
+</body>
+</html>
