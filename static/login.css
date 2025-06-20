@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:rgb(222, 215, 230);
+    margin: 0;
+    padding: 0;
+    color:rgb(52, 22, 66);
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #cfbbdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.Smart-Alert-Icon {
+    width: 35px;
+    margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b4b8a;
+  font-weight: 500;
+}
+
+.login-container {
+  max-width: 500px;
+  margin: 200px auto 50px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.login-container h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: #e6dbe9;
+  box-sizing: border-box;
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #3b4cca;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot {
+  display: block;
+  margin: 15px 0 10px;
+  font-size: 14px;
+  color: #3b4cca;
+  text-decoration: none;
+}
+
+.signup-text {
+  font-size: 14px;
+  color: #444;
+}
+
+.signup-text a {
+  color: #3b4cca;
+  text-decoration: none;
+}
+
+.social-login {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-login a {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+}
+
+.facebook {
+  background-color: #3b5998;
+}

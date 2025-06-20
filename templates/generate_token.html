@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Alert</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='generate_token.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+</head>
+<body>
+     <header class="topbar">
+  <div class="logo-section">
+    <img src="{{ url_for('static', filename='images/Alarm.png') }}" alt="Alarm Icon" class="Smart-Alert-Icon">
+    <h1>Smart Alert</h1>
+  </div>
+  </header>
+
+    <!-- Main Content -->
+    <div class="page-title">Invite Tokens</div>
+    <div class="table-container">
+        <table class="table table-bordered table-hover bg-white shadow-sm rounded">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>🔑 Token</th>
+                    <th>👤 User</th>
+                    <th>📅 Created At</th>
+                    <th>📌 Status</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                {% for token in tokens %}
+                <tr>
+                    <td>{{ token.token }}</td>
+                    <td>{{ token.user.email if token.user else 'Not Used yet' }}</td>
+                    <td>{{ token.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ '✅ Used' if token.used else '⏳ Not Used yet ' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+<div class="token-button-wrapper">
+  <form action="{{ url_for('generate_invite_token') }}" method="POST">
+    <button type="submit" class="btn-invite">
+      <i class="fas fa-plus"></i> Generate New Token
+    </button>
+  </form>
+</div>
+  <div class="go-back" onclick="window.location.href='{{ url_for('welcome') }}'">
+  <i class="fas fa-arrow-left"></i> Go Back
+</div>
+
+    <script src="{{ url_for('static', filename='generate_token.js') }}"></script>
+</body>
+</html>

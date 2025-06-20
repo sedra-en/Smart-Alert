@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+<aside class="sidebar">
+<h1> <img src="{{ url_for('static',filename='Alarm.png')}}" class="Smart-Alert-Icon"><span class="title-text">SMART ALERT</span></h1>
+<ul>
+  <li><a href="{{url_for('dashboard')}}"><img src="{{ url_for('static',filename='Dashboard.png')}}" class="Icon">Dashboard</a></li>
+  <li><a href="{{url_for('feedback_page')}}"><img src="{{ url_for('static',filename='Feedback Analysis.jpg')}}"class="Icon" >Feedback Analysis</a></li>
+<li>
+  <a href="#" id="openPasswordModal">
+    <i class="fas fa-key Icon"></i> Generate Token
+  </a>
+</li>
+  <li class="Logout"><a href="#" id="logoutBtn" data-login-url="{{ url_for('login') }}">
+  <img src="{{ url_for('static', filename='Log out.jpg') }}" alt="Log out Icon" class="Icon">Log out
+</a>
+
+</li>
+</ul>
+</aside>
+<main class="main-content">
+  <h1>Welcome to <em>SMART ALERT</em>..!</h1>
+  <p>Turn Emotions into Opportunities </p>
+    </form>
+  </div>
+</div>
+</main>
+  </div>
+  <script src="{{ url_for('static', filename='welcome.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Alert</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='emotion_status.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+     <header class="topbar">
+  <div class="logo-section">
+    <img src="{{ url_for('static', filename='images/Alarm.png') }}" alt="Alarm Icon" class="Smart-Alert-Icon">
+    <h1>Smart Alert</h1>
+  </div>
+  </header>
+
+    <div class="page-title">Emotion Status</div>
+    <div class="time-box" id="timeBox">Time: --:--:--</div>
+
+  <div class="chart-container">
+    <canvas id="emotionChart" width="250" height="70"></canvas>
+  </div>
+
+  <div id="alertBox" class="alert-box hidden">⚠️ Negative Emotion Detected!</div>
+<div class="go-back" onclick="window.location.href='{{ url_for('dashboard') }}'">
+  <i class="fas fa-arrow-left"></i> Go Back
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='emotion_status.js') }}"></script>
+
+</body>
+</html>

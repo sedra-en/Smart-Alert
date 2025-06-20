@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:rgb(222, 215, 230);
+    margin: 0;
+    padding: 0;
+    color:rgb(52, 22, 66);
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #cfbbdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.Smart-Alert-Icon {
+    width: 35px;
+    margin-right: 10px;
+}
+
+
+.Home-link {
+  color: rgb(52, 22, 66);
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.Home-link:hover {
+  color: #0056b3;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: 200px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  color: #333;
+}
+
+.signup-container h2 {
+  margin-bottom: 25px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  cursor: pointer;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #5e2b8a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}

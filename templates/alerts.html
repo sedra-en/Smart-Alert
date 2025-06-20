@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alerts</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='alerts.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo-section">
+      <img src="{{ url_for('static', filename='images/Alarm.png') }}" alt="Alarm Icon" class="Smart-Alert-Icon">
+      <h1>Smart Alert</h1>
+    </div>
+  </header>
+
+  <div class="alert-container">
+    <h1 class="title">RECENT EMOTION ALERTS</h1>
+    <div id="alerts-list"></div>
+  </div>
+
+  <div class="go-back" onclick="window.location.href='{{ url_for('dashboard') }}'">
+    <i class="fas fa-arrow-left"></i> Go Back
+  </div>
+
+  <script src="{{ url_for('static', filename='alerts.js') }}"></script>
+</body>
+</html>

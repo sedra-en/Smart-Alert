@@ -1,0 +1,168 @@
+.Icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.Smart-Alert-Icon{
+    width: 35px;
+    height: 35px;
+   margin-right: 10px;
+    vertical-align: middle;
+
+}
+.title-text{
+    color: rgb(52, 22, 66);
+}
+body{
+    background-color: rgb(222, 215, 230);
+    margin: 0;
+    font-family: Arial,sans-serif;
+    display: flex;
+
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    display:flex;
+    align-items: center;
+    
+    
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin: 20 0;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.sidebar ul li{
+    margin-bottom: 40px;
+}
+.upload-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 👈 هاد بوسط النص عامودياً */
+  text-align: center;
+  padding: 40px 20px;
+  margin-left: 100px; /* 👈 لحتى ما تغطيها الـ sidebar */
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.animated-title {
+  font-size: 26px;
+  color: #4a148c;
+  margin-bottom: 30px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-upload-button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-upload-button:hover {
+  background-color: #8e24aa;
+}
+
+#fileName {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.image-preview img {
+  margin-top: 25px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#emotionResult {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #4a148c;
+  font-weight: bold;
+}
+
+#imageTime {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+#emotionResult {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #4a148c;
+  font-weight: bold;
+  display: none; /* 👈 نخفيها بالبداية */
+}
+.emotion-alert {
+  color: #d32f2f;
+  animation: alertPulse 1.5s infinite;
+}
+
+@keyframes alertPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); color: #ff5252; }
+  100% { transform: scale(1); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-8px); }
+  80% { transform: translateX(8px); }
+}
+
+.shake-alert {
+  animation: shake 1.2s infinite;
+ 
+}
+
+.red-alert {
+  color: red !important;
+  font-weight: bold;
+}
+#alertsLink{
+  display: inline-block;
+}
