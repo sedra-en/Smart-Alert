@@ -25,6 +25,6 @@ HTML · CSS · JavaScript · MySQL
 - Processing speed: < 1 second per frame
 - Trained on real-world image datasets (Kaggle)
 
-## 👥 Team
+## Team
 Built as a university project at Al-Sham Private University (2024–2025)
 Role: AI + Frontend + UI/UX Lead
